@@ -24,11 +24,11 @@ export default function SerraLandingPage() {
       <FeaturesSection />
       <BenefitsSection />
       <WhyChooseUsSection />
-      {/* <LoanSimulator /> */}
+      <LoanSimulator />
       <ProductsSection />
+      <FormSection />
       <FAQSection />
       <TestimonialsSection />
-      <FormSection />
       <ContactSection />
       <Footer />
     </div>
