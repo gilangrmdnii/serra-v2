@@ -27,7 +27,7 @@ export default function ProductsSection() {
                 "Pencairan hingga 95%",
                 "Biaya transparan"
             ],
-            recommended: true
+            recommended: false
         },
         {
             tenor: "36 Bulan",
@@ -51,7 +51,7 @@ export default function ProductsSection() {
                 "Pencairan hingga 95%",
                 "Biaya transparan"
             ],
-            recommended: false
+            recommended: true
         }
     ];
 
