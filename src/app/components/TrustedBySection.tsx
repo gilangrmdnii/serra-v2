@@ -3,7 +3,6 @@
 import React from 'react';
 
 export default function TrustedBySection() {
-    const partners = ["OJK", "BRI", "Mandiri", "BCA", "BNI"];
 
     return (
         <section className="py-8 px-4">

@@ -68,8 +68,8 @@ export default function ProductsSection() {
         },
         {
             icon: <Shield className="w-6 h-6" />,
-            title: "Aman, Legal & Terdaftar OJK",
-            description: "Layanan gadai kendaraan kami diawasi OJK untuk memastikan keamanan, legalitas, dan kenyamanan setiap transaksi."
+            title: "Aman, Legal & Terpercaya",
+            description: "Layanan gadai kendaraan melalui mitra pembiayaan resmi berizin dan diawasi oleh OJK untuk menjamin keamanan dan transparansi proses."
         },
         {
             icon: <Award className="w-6 h-6" />,
@@ -92,7 +92,7 @@ export default function ProductsSection() {
         {
             icon: <Shield className="w-12 h-12" />,
             title: "Aman & Legal",
-            subtitle: "Terdaftar resmi dan diawasi OJK."
+            subtitle: "TMitra resmi dari leasing terdaftar dan diawasi OJK."
         }
     ];
 
@@ -170,8 +170,9 @@ export default function ProductsSection() {
                             Siap Cairkan Dana Hari Ini?
                         </h3>
                         <p className="text-blue-100 text-lg mb-8">
-                            Proses mudah, legal, dan terpercaya. Berpengalaman sejak 1982 dengan mitra terdaftar OJK di seluruh Indonesia.
+                            Proses mudah, legal, dan terpercaya melalui mitra leasing resmi berizin OJK di seluruh Indonesia.
                         </p>
+
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <button
                                 onClick={() => document.getElementById('simulator')?.scrollIntoView({ behavior: 'smooth' })}

@@ -14,6 +14,8 @@ import FormSection from './components/FormSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ProductsSection from './components/ProductsSection';
+import ScrollToTopButton from './components/ScrollToTopButton';
+
 
 export default function SerraLandingPage() {
   return (
@@ -31,6 +33,7 @@ export default function SerraLandingPage() {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 } 

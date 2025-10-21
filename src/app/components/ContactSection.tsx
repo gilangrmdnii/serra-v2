@@ -9,15 +9,8 @@ export default function ContactSection() {
       icon: Phone,
       title: "Telepon",
       desc: "Hubungi kami sekarang",
-      link: "tel:+6281234567890",
-      linkText: "+62 812-3456-7890"
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      desc: "Kirim email ke kami",
-      link: "mailto:info@serra.id",
-      linkText: "info@serra.id"
+      link: "tel:+6282271151501",
+      linkText: "+62 822-7115-1501"
     },
     {
       icon: MapPin,
@@ -41,7 +34,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {contacts.map((contact, idx) => (
             <div 
               key={idx} 

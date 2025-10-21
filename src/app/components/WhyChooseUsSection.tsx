@@ -6,7 +6,7 @@ import { Check, Users, Shield } from 'lucide-react';
 export default function WhyChooseUsSection() {
     const features = [
         {
-            title: "Terdaftar & Diawasi OJK",
+            title: "Aman, Legal & Terpercaya",
             desc: "Legalitas terjamin dan sesuai regulasi pemerintah"
         },
         {
@@ -30,7 +30,7 @@ export default function WhyChooseUsSection() {
                                 Jaga Uang Anda Tetap <span className="text-blue-200">Aman</span> Selamanya
                             </h2>
                             <p className="text-blue-100 mb-8 leading-relaxed">
-                                Aman, resmi, dan terpercaya. Kami bermitra dengan leasing berizin dan diawasi OJK, memastikan data serta transaksi Anda selalu terlindungi.
+                                Aman, resmi, dan terpercaya. Kami bermitra dengan lembaga pembiayaan berizin OJK untuk memastikan seluruh proses dan data Anda terlindungi dengan baik.
                             </p>
 
                             <div className="space-y-4">

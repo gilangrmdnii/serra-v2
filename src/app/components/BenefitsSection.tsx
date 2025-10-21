@@ -5,35 +5,36 @@ import { Clock, Shield, DollarSign, FileText, Users, TrendingUp } from 'lucide-r
 
 export default function BenefitsSection() {
   const benefits = [
-    { 
-      icon: Clock, 
-      title: "Proses Cepat", 
-      desc: "Pencairan dana dalam 24 jam setelah verifikasi dokumen lengkap" 
+    {
+      icon: Clock,
+      title: "Proses Cepat",
+      desc: "Pencairan dana dalam 24 jam setelah verifikasi dokumen lengkap"
     },
-    { 
-      icon: Shield, 
-      title: "Aman & Terpercaya", 
-      desc: "Resmi dibawah naungan OJK dan bekerja sama dengan bank ternama" 
+    {
+      icon: Shield,
+      title: "Aman & Terpercaya",
+      desc: "Bermitra dengan lembaga pembiayaan resmi berizin OJK dan bank ternama"
     },
-    { 
-      icon: DollarSign, 
-      title: "Bunga Rendah", 
-      desc: "Suku bunga kompetitif mulai dari 1.2% per bulan flat" 
+
+    {
+      icon: DollarSign,
+      title: "Bunga Rendah",
+      desc: "Suku bunga kompetitif mulai dari 1.2% per bulan flat"
     },
-    { 
-      icon: FileText, 
-      title: "Syarat Mudah", 
-      desc: "Hanya dengan BPKB mobil dan KTP, tanpa BI checking" 
+    {
+      icon: FileText,
+      title: "Syarat Mudah",
+      desc: "Hanya dengan BPKB mobil dan KTP, tanpa BI checking"
     },
-    { 
-      icon: Users, 
-      title: "Pelayanan 24/7", 
-      desc: "Customer service siap membantu Anda kapan saja" 
+    {
+      icon: Users,
+      title: "Pelayanan 24/7",
+      desc: "Customer service siap membantu Anda kapan saja"
     },
-    { 
-      icon: TrendingUp, 
-      title: "Plafon Tinggi", 
-      desc: "Pinjaman hingga 80% dari nilai taksiran mobil Anda" 
+    {
+      icon: TrendingUp,
+      title: "Plafon Tinggi",
+      desc: "Pinjaman hingga 80% dari nilai taksiran mobil Anda"
     }
   ];
 
@@ -53,8 +54,8 @@ export default function BenefitsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">

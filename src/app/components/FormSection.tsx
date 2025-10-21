@@ -17,30 +17,22 @@ export default function FormSection() {
         message: ''
     });
 
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const waMessage = `*Pengajuan Gadai BPKB Mobil*
+        try {
+            const response = await fetch("/api/pengajuan", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
 
-            Nama: ${formData.name}
-            No. HP: ${formData.phone}
-            Email: ${formData.email}
-            Kota: ${formData.city}
-
-            *Data Kendaraan:*
-            Merk: ${formData.carBrand}
-            Tipe: ${formData.carType}
-            Tahun: ${formData.carYear}
-
-            Jumlah Pinjaman: ${formData.loanAmount}
-            Tenor: ${formData.tenor} Bulan
-
-            Pesan: ${formData.message || '-'}`;
-
-        const encodedMessage = encodeURIComponent(waMessage.trim());
-        const whatsappNumber = '6281234567890';
-
-        window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+            if (!response.ok) throw new Error("Gagal mengirim data");
+            alert("Pengajuan berhasil dikirim!");
+        } catch (err) {
+            console.error(err);
+            alert("Terjadi kesalahan, coba lagi nanti.");
+        }
     };
 
     const requirements = [
@@ -325,7 +317,7 @@ export default function FormSection() {
                                 Data Anda Dilindungi dengan Enkripsi SSL
                             </p>
                             <p className="text-center text-gray-600 text-sm mt-2">
-                                Terdaftar & diawasi OJK
+                                Bekerja sama dengan lembaga pembiayaan resmi yang diawasi OJK
                             </p>
                         </div>
 
