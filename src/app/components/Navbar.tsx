@@ -1,9 +1,13 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar({
+  onOpenModal,
+}: {
+  onOpenModal: () => void;
+}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -16,12 +20,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-xl shadow-md z-50 transition-all duration-300">
+    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-xl shadow-md z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="p-2 bg-gradient-to-br from-blue-600/90 to-blue-800/90 rounded-xl backdrop-blur-sm shadow-md">
+            <div className="p-2 bg-gradient-to-br from-blue-600/90 to-blue-800/90 rounded-xl shadow-md">
               <img
                 src="/images/logo-serra.png"
                 alt="SERRA.ID Logo"
@@ -36,9 +40,9 @@ export default function Navbar() {
               <a
                 key={item.href}
                 href={item.href}
-                className="relative text-gray-700 font-medium transition-colors duration-200 hover:text-blue-700
-                     after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px]
-                     after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-gray-800 font-medium tracking-wide transition-colors duration-200 hover:text-blue-700
+                  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px]
+                  after:bg-gradient-to-r from-[#E78F00] to-[#3C8DD4] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.label}
               </a>
@@ -47,12 +51,12 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a
-              href="#contact"
-              className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+            <button
+              onClick={onOpenModal}
+              className="px-5 py-2.5 rounded-full bg-gradient-to-r from-[#3C8DD4] to-[#2873B9] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Ajukan Sekarang
-            </a>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -67,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/90 backdrop-blur-xl shadow-lg border-t border-gray-100">
+        <div className="md:hidden bg-white/95 backdrop-blur-xl shadow-lg border-t border-gray-100">
           <div className="px-4 py-3 space-y-3">
             {navLinks.map((item) => (
               <a
@@ -79,12 +83,15 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="block w-full text-center mt-3 py-2 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold shadow hover:scale-105 transition-all duration-300"
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                onOpenModal();
+              }}
+              className="block w-full text-center mt-3 py-2.5 rounded-full bg-gradient-to-r from-[#3C8DD4] to-[#2873B9] text-white font-semibold shadow hover:scale-105 transition-all duration-300"
             >
               Ajukan Sekarang
-            </a>
+            </button>
           </div>
         </div>
       )}

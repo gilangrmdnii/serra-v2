@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Navbar from './components/Navbar';
 import HeroSection from './components/Hero';
 import TrustedBySection from './components/TrustedBySection';
 import FeaturesSection from './components/FeaturesSection';
@@ -15,12 +14,13 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ProductsSection from './components/ProductsSection';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import NavbarWithModal from './components/NavbarWithModal';
 
 
 export default function SerraLandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Navbar />
+      <NavbarWithModal />
       <HeroSection />
       <TrustedBySection />
       <FeaturesSection />
