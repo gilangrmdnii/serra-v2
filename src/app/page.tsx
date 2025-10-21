@@ -26,9 +26,9 @@ export default function SerraLandingPage() {
       <FeaturesSection />
       <BenefitsSection />
       <WhyChooseUsSection />
+      <FormSection />
       <LoanSimulator />
       <ProductsSection />
-      <FormSection />
       <FAQSection />
       <TestimonialsSection />
       <ContactSection />
