@@ -32,7 +32,7 @@ export default function ProductsSection() {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 
             leading-tight tracking-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.08)]">
                         Simulasi{" "}
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E78F00] via-[#3C8DD4] to-[#2873B9]">
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r  from-[#FDBA74] via-[#F97316] to-[#FBBF24]">
                             Gadai BPKB
                         </span>
                     </h2>

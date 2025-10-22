@@ -11,7 +11,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden pt-28 pb-24 md:pb-32 text-white">
       {/* --- Latar Belakang --- */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#2563EB] via-[#1E3A8A] to-[#0F172A]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#007BFF] via-[#1D9BF0] to-[#7EC8FF]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.3),transparent_70%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_70%,rgba(231,143,0,0.15),transparent_70%)]" />
 
@@ -77,8 +77,8 @@ export default function HeroSection() {
               Pinjaman{" "}
               <span
                 className="bg-clip-text text-transparent bg-gradient-to-r 
-                from-[#60A5FA] via-[#2563EB] to-[#FBBF24]
-                drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)] animate-[pulse_6s_ease-in-out_infinite]"
+      from-[#FDBA74] via-[#F97316] to-[#FBBF24]
+      drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
               >
                 BPKB Mobil
               </span>{" "}
@@ -90,24 +90,24 @@ export default function HeroSection() {
             <p className="text-lg md:text-xl text-slate-100/90 max-w-xl mx-auto md:mx-0 leading-relaxed font-medium">
               Nikmati proses <span className="font-semibold text-[#FACC15]">1 hari kerja</span> dengan bunga rendah mulai{" "}
               <span className="font-semibold text-[#FCD34D]">0.8%</span> dan pencairan hingga{" "}
-              <span className="font-semibold text-[#E0F2FE]">95%</span> dari nilai kendaraan Anda.
+              <span className="font-semibold text-[#FFEBC5]">95%</span> dari nilai kendaraan Anda.
             </p>
 
             {/* Tagline highlight */}
             <motion.div
-              className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold tracking-wide text-[#E0F2FE] border border-white/20 shadow-sm"
+              className="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold tracking-wide text-[#FFF7ED] border border-white/20 shadow-sm"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <span className="text-[#FCD34D]">Tanpa BI Checking</span> • Proses Cepat • Aman 100%
+              <span className="text-[#FBBF24]">Tanpa BI Checking</span> • Proses Cepat • Aman 100%
             </motion.div>
 
             {/* Tombol CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
               <motion.button
                 onClick={() => setShowForm(true)}
-                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#1E40AF] text-white px-9 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-blue-600/40 hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#001f4b] to-[#003580] hover:from-[#001f4b] hover:to-[#003580] text-white px-9 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-orange-600/40 hover:scale-105 transition-all duration-300"
                 whileTap={{ scale: 0.97 }}
               >
                 Ajukan Sekarang

@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
 
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mt-2 sm:mt-4 mb-3 sm:mb-5 leading-snug sm:leading-tight drop-shadow-[0_3px_8px_rgba(40,115,182,0.25)]">
             Apa Kata{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#E78F00] to-[#2873B9]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA74] via-[#F97316] to-[#f7b201]">
               Nasabah
             </span>{" "}
             Kami?
