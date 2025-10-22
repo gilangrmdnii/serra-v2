@@ -20,7 +20,7 @@ export default function LoanExample() {
       <div className="max-w-3xl mx-auto px-4">
         {/* Simulasi */}
         <h3 className="text-xl font-semibold text-gray-900 mb-4">
-          Bagaimana contoh simulasi Fasilitas Dana Nova?
+          Bagaimana contoh simulasi Fasilitas Dana Serra?
         </h3>
 
         <div className="text-gray-800 leading-relaxed mb-4 space-y-1">

@@ -15,6 +15,9 @@ import Footer from './components/Footer';
 import ProductsSection from './components/ProductsSection';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import NavbarWithModal from './components/NavbarWithModal';
+import FasilitasSection from './components/FasilitasSection';
+import InfoDokumenSection from './components/InfoDocuments';
+import CaraPengajuanSection from './components/CaraPengajuanSection';
 
 
 export default function SerraLandingPage() {
@@ -22,15 +25,16 @@ export default function SerraLandingPage() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       <NavbarWithModal />
       <HeroSection />
-      <TrustedBySection />
-      <FeaturesSection />
-      <BenefitsSection />
-      <WhyChooseUsSection />
-      <FormSection />
-      <LoanSimulator />
+      <FasilitasSection />
+      <CaraPengajuanSection />
       <ProductsSection />
-      <FAQSection />
+      <BenefitsSection />
+      <InfoDokumenSection />
       <TestimonialsSection />
+      {/* <WhyChooseUsSection /> */}
+      <FormSection />
+      {/* <LoanSimulator /> */}
+      <FAQSection />
       <ContactSection />
       <Footer />
       <ScrollToTopButton />

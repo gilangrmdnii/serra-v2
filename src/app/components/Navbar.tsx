@@ -11,9 +11,8 @@ export default function Navbar({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#home", label: "Home" },
+    { href: "#", label: "Home" },
     { href: "#benefits", label: "Keuntungan" },
-    { href: "#simulator", label: "Simulasi" },
     { href: "#testimonials", label: "Testimoni" },
     { href: "#faq", label: "FAQ" },
     { href: "#contact", label: "Kontak" },
