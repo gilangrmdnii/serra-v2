@@ -76,12 +76,11 @@ export default function HeroSection() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.15] tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.35)]">
               Pinjaman{" "}
               <span
-                className="bg-clip-text text-transparent bg-gradient-to-r 
-      from-[#FDBA74] via-[#F97316] to-[#FBBF24]
-      drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
+                className="bg-clip-text text-[#1E3A8A] font-semibold"
               >
                 BPKB Mobil
-              </span>{" "}
+              </span>
+
               <br className="hidden sm:block" />
               <span className="text-[#E2E8F0]">Cepat, Aman, & Terpercaya</span>
             </h1>
@@ -107,7 +106,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
               <motion.button
                 onClick={() => setShowForm(true)}
-                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#001f4b] to-[#003580] hover:from-[#001f4b] hover:to-[#003580] text-white px-9 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-orange-600/40 hover:scale-105 transition-all duration-300"
+                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#001f4b] to-[#003580] hover:from-[#001f4b] hover:to-[#003580] text-white px-9 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-blue-600/40 hover:scale-105 transition-all duration-300"
                 whileTap={{ scale: 0.97 }}
               >
                 Ajukan Sekarang

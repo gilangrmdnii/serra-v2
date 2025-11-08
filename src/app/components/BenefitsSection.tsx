@@ -95,11 +95,7 @@ export default function BenefitsSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 md:mt-12">
           <button
             onClick={() => setShowForm(true)}
-            className="group relative inline-flex items-center justify-center overflow-hidden 
-               px-7 sm:px-9 py-3 sm:py-4 rounded-xl text-white font-bold text-base sm:text-lg 
-               bg-gradient-to-r from-[#E78F00] via-[#F3A93F] to-[#2873B6]
-               hover:from-[#2873B6] hover:via-[#3C8DD4] hover:to-[#E78F00]
-               shadow-md hover:shadow-lg transition-all duration-300"
+            className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#001f4b] to-[#003580] hover:from-[#001f4b] hover:to-[#003580] text-white px-9 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-blue-600/40 hover:scale-105 transition-all duration-300"
           >
             <span className="relative z-10 flex items-center gap-2">
               Ajukan Sekarang

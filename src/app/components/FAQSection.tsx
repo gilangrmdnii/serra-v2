@@ -128,7 +128,7 @@ export default function FaqSection() {
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold mt-4 mb-5 leading-tight drop-shadow-[0_3px_10px_rgba(40,115,182,0.3)]">
             Pertanyaan yang{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDBA74] via-[#F97316] to-[#f7b201]">
+            <span className="bg-clip-text text-[#1E3A8A] font-semibold">
               Sering Diajukan
             </span>
           </h2>

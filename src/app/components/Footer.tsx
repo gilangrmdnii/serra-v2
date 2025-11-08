@@ -48,7 +48,7 @@ export default function Footer() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-gradient-to-r from-[#FDBA74] via-[#F97316] to-[#f7b201] text-white font-semibold px-5 py-2 rounded-full text-sm md:text-base hover:opacity-90 transition-all shadow-md"
+              className="inline-block bg-gradient-to-r from-[#0A2540] via-[#112F56] to-[#1B3A60] text-white font-semibold px-5 py-2 rounded-full text-sm md:text-base hover:opacity-90 transition-all shadow-md"
             >
               Hubungi Kami
             </a>
